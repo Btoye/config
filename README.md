@@ -1,1 +1,1 @@
-# config
+# Sway config
