@@ -200,15 +200,11 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
+    #status_command ~/.sway/swaystatus.sh
     colors {
         statusline #ffffff
         background #323232
         inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-    order += "battery 0"
-    battery 0 {
-        format = "#status %percentage - %remaining"
-        path = "/sys/class/power_supply/BAT0/uevent" 
     }
 }
 
