@@ -63,6 +63,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 # TODO Add icon for muted sound ^^
 
+# TODO Set up caps lock light
+
 ### Key bindings
 #
 # Basics:
