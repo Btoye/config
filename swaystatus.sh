@@ -12,8 +12,10 @@ do
 	    head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
 
 	# TODO Show muted status
-
 	# TODO Fix capslock light..
+	# TODO Get hardrive space remaining
+	# TODO Get current wifi details
+	# TODO Get swaybar to work lol
 
 	printf "%s\n" "${BAT}" "VOL: ${VOL}%" "${TIME}"
 	sleep 10
