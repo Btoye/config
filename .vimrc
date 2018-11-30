@@ -1,7 +1,7 @@
 " using toloveru's dotfiles as a basis
 " general
 syntax on
-set number
+set number relativenumber
 set ruler
 set showmatch
 

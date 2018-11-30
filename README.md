@@ -1,6 +1,6 @@
 # Linux config with a focus on Sway
 
-As part of learning sway it was necessary to try and configure it to fit my workspace.. Don't check the commit history, likely a lot of copy paste and mess will turn up.
+This has begun to expand to hold all of my Linux configs such as my .vimrc, my sway config files and soem associated bash scripts. Full disclaimer, the history of these files will be disgusting.
 
 ## Lessons learnt
 
