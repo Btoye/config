@@ -11,6 +11,10 @@ do
 	VOL=$(pactl list sinks | grep '^[[:space:]]Volume:' | \
 	    head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
 
+	#https://www.youtube.com/watch?v=MNwpdqD_I8Y
+	# TODO Show remaining memory
+	# TODO Show current cpu usage
+
 	# TODO Show muted status
 	# TODO Fix capslock light..
 	# TODO Get hardrive space remaining
