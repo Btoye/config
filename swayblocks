@@ -3,6 +3,11 @@ command=upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percen
 interval=5
 separator_block_width=15
 
+[memory]
+command=free -h | awk '/^Mem:/ {print $3 "/" $2}'
+interval=30
+separator_block_width=15
+
 [time]
 command=date +"%a %d %b %Y %H:%M"
 interval=15
