@@ -5,7 +5,7 @@ separator_block_width=15
 
 [volume]
 command=pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'
-interval=15
+interval=5
 separator_block_width=15
 
 [memory]
