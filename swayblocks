@@ -3,10 +3,10 @@ command=upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percen
 interval=5
 separator_block_width=15
 
-#[volume]
-#command=pactl list sinks | grep '^[[:space:]]Volume:' | \ head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'
-#interval=15
-#separator_block_width=15
+[volume]
+command=pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'
+interval=15
+separator_block_width=15
 
 [memory]
 command=free -h | awk '/^Mem:/ {print $3 "/" $2}'
