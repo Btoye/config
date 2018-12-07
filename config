@@ -1,16 +1,13 @@
 ### Variables
 set $mod Mod4
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
 set $term x-terminal-emulator
-# Your preferred application launcher
 set $menu dmenu_run
 
-# set border mode and gaps
+# Set border mode and gaps
 gaps outer 3
 gaps inner 10
 
@@ -18,21 +15,9 @@ default_floating_border none
 default_border pixel 4
 
 ### Output configuration
-#
 output eDP-1 res 1920x1080
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
 
-### Input configuration
-#
-#Example configuration:
-#
 input "1739:24385:Synaptics_TM24" {
        dwt enabled
        tap enabled
@@ -40,27 +25,19 @@ input "1739:24385:Synaptics_TM24" {
        middle_emulation enabled
 }
 
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-
-# Volume Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # TODO Fix brightness controls
-# Sreen brightness controls
+# Screen brightness controls
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # TODO Add icon for muted sound ^^
 
-# TODO Set up caps lock light
-
-### Key bindings
-#
-# Basics:
-#
+# Keybindings:
     # start a terminal
     bindsym $mod+Return exec $term
 
@@ -85,9 +62,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
     # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
-#
+
 # Moving around:
-#
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
@@ -109,9 +85,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
-#
+
 # Workspaces:
-#
     # switch to workspace
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2
@@ -134,15 +109,10 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
     bindsym $mod+Shift+8 move container to workspace 8
     bindsym $mod+Shift+9 move container to workspace 9
     bindsym $mod+Shift+0 move container to workspace 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
-#
+
 # Layout stuff:
-#
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
+    # Screen split
+	bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -161,9 +131,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
     # move focus to the parent container
     bindsym $mod+a focus parent
-#
+
 # Scratchpad:
-#
     # Sway has a "scratchpad", which is a bag of holding for windows.
     # You can send windows there and get them back later.
 
@@ -173,20 +142,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
-#
+
 # Resizing containers:
-#
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
     bindsym $left resize shrink width 10 px or 10 ppt
     bindsym $down resize grow height 10 px or 10 ppt
     bindsym $up resize shrink height 10 px or 10 ppt
     bindsym $right resize grow width 10 px or 10 ppt
 
-    # ditto, with arrow keys
     bindsym Left resize shrink width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
@@ -196,14 +159,14 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"    
 }
+
+# Custom binds
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+r exec $term -e ranger
 bindsym $mod+tab exec $term -e swaylock
 bindsym $mod+Shift+tab exec $term -e shutdown -P now
-#
+
 # Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
     status_command i3blocks -c ~/.config/sway/swayblocks    
