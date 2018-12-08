@@ -7,3 +7,4 @@ My goal in creating my own config is to stay as close as I can to default while 
 ### Lessons learnt
 * used ln for the first time to add files in different directories to a git repo. (read into inodes and how the Linux filesystem works)
 * learning to use grep and sed to get output and transform it to display on swaybar (learn about awk and how I could make this more efficient)
+* used awk to match a line in output and print some of the arguments in different order
