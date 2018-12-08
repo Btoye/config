@@ -8,6 +8,11 @@ command=pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 ))
 interval=5
 separator_block_width=15
 
+[network]
+command=nmcli dev wifi | awk '/^*/ {print $8 " " $2}'
+interval=20
+separator_block_width=15
+
 [memory]
 command=free -h | awk '/^Mem:/ {print $3 "/" $2}'
 interval=15
