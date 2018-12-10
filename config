@@ -165,7 +165,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+r exec $term -e ranger
 bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
-bindsym $mod+Shift+tab exec $term -e shutdown -P now
+bindsym $mod+Shift+backspace exec $term -e shutdown -P now
 
 # Status Bar:
 bar {
