@@ -8,8 +8,8 @@ set $term x-terminal-emulator
 set $menu dmenu_run
 
 # Set border mode and gaps
-gaps outer 2
-gaps inner 7
+gaps outer 1
+gaps inner 3
 
 default_floating_border none
 default_border pixel 4
