@@ -161,6 +161,8 @@ mode "resize" {
 
 # Custom binds
 bindsym $mod+r mode "resize"
+
+# work out how to make ranger float (attempted using for_window and xprop output)
 bindsym $mod+Shift+r exec $term -e ranger
 bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
