@@ -1,5 +1,5 @@
 [battery]
-command=upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage" | sed "s/:[ \t]*/: /" | xargs
+command=swayBat
 interval=5
 separator_block_width=15
 
