@@ -1,6 +1,5 @@
 #!/bin/sh
-
-# /usr/local/scripts/swayBat
+# File is symlinked, actually stored in /usr/bin
 
 capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 status=$(cat /sys/class/power_supply/BAT0/status)
