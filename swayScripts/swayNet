@@ -1,0 +1,5 @@
+#!/bin/sh
+
+netstat=$(nmcli dev wifi | awk '/^*/ {print $8 " " $2}')
+
+echo "$netstat"
