@@ -1,0 +1,5 @@
+#!/bin/sh
+
+capacity=$(free -h | awk '/^Mem:/ {print $3 "/" $2}')
+
+echo $capacity
