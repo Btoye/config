@@ -3,9 +3,6 @@ command=swayBat
 interval=5
 separator_block_width=15
 
-# Move scripts to separate files so case blocks can be added for interactivity. eg click to open nmtui
-# potentially add colors and icons depending on what state each function is in
-
 [volume]
 command=swayVol
 interval=5

@@ -1,4 +1,3 @@
-" using toloveru's dotfiles as a basis
 " general
 syntax on
 set number relativenumber
