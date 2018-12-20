@@ -1,0 +1,5 @@
+#!/bin/sh
+
+capacity=$(df -H | awk '/nvme0n1p2/ {print $3 "/" $2}')
+
+echo "$capacity"

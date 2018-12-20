@@ -19,7 +19,7 @@ interval=15
 separator_block_width=15
 
 [diskspace]
-command=df -H | awk '/nvme0n1p2/ {print $3 "/" $2}'
+command=swayDisk
 interval=60
 separator_block_width=15
 
