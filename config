@@ -160,7 +160,8 @@ bar {
     position top
     status_command i3blocks -c ~/.config/sway/swayblocks    
     colors {
-        statusline #ffffff
+		# color match workspace indicators to wallaper
+		statusline #ffffff
         background #323232
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
