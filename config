@@ -16,7 +16,7 @@ default_border pixel 4
 
 ### Output configuration
 output eDP-1 res 1920x1080
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /usr/share/backgrounds/steins_gate.png fill
 
 input "1739:24385:Synaptics_TM24" {
        dwt enabled
@@ -151,7 +151,7 @@ bindsym $mod+y resize grow width 10 px or 10 ppt
 # Custom binds
 # work out how to make ranger float (attempted using for_window and xprop output)
 bindsym $mod+Shift+r exec $term -e ranger
-bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/steins_gate.png
 
 bindsym $mod+Shift+backspace exec $term -e shutdown -P now
 
