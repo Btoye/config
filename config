@@ -35,8 +35,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-# TODO Add icon for muted sound ^^
-
 # Keybindings:
     # start a terminal
     bindsym $mod+Return exec $term
@@ -150,7 +148,7 @@ bindsym $mod+y resize grow width 10 px or 10 ppt
 
 # Custom binds
 # work out how to make ranger float (attempted using for_window and xprop output)
-bindsym $mod+Shift+r exec $term -e ranger
+bindsym $mod+Shift+r exec $term -e nnn
 bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/steins_gate.png
 
 bindsym $mod+Shift+backspace exec $term -e shutdown -P now
