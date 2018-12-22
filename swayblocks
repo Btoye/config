@@ -7,6 +7,7 @@ separator_block_width=15
 command=swayVol
 interval=5
 separator_block_width=15
+label=🔊
 
 [network]
 command=swayNet
