@@ -7,7 +7,6 @@ separator_block_width=15
 command=swayVol
 interval=5
 separator_block_width=15
-label=🔊
 
 [network]
 command=swayNet
@@ -26,5 +25,6 @@ separator_block_width=15
 
 [time]
 command=date +"%a %d %b %Y %H:%M"
+label=📅
 interval=15
 separator_block_width=15
