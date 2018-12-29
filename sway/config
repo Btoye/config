@@ -146,6 +146,7 @@ bindsym $mod+y resize grow width 10 px or 10 ppt
 # Custom binds
 bindsym $mod+Shift+r exec $term -e ranger
 bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/Beaver.png
+bindsym $mod+c exec $term -e code
 
 bindsym $mod+Shift+backspace exec $term -e shutdown -P now
 
@@ -159,8 +160,6 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 } 
-
-# custom workspaces
 
 for_window [class="Firefox"] move window to workspace 2
 for_window [class="Code"] move window to workspace 3
