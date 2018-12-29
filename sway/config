@@ -159,5 +159,10 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 } 
- 
+
+# custom workspaces
+
+for_window [class="Firefox"] move window to workspace 2
+for_window [class="Code"] move window to workspace 3
+
 include /etc/sway/config.d/*
