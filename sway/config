@@ -16,7 +16,7 @@ default_border pixel 4
 
 ### Output configuration
 output eDP-1 res 1920x1080
-output * bg /usr/share/backgrounds/Beaver.png fill
+output * bg /usr/share/backgrounds/pic.jpg fill
 
 input "1739:24385:Synaptics_TM24" {
        dwt enabled
@@ -145,7 +145,7 @@ bindsym $mod+y resize grow width 10 px or 10 ppt
 
 # Custom binds
 bindsym $mod+Shift+r exec $term -e ranger
-bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/Beaver.png
+bindsym $mod+tab exec $term -e swaylock -i /usr/share/backgrounds/pic.jpg
 bindsym $mod+c exec $term -e code
 
 bindsym $mod+Shift+backspace exec $term -e shutdown -P now
@@ -161,7 +161,6 @@ bar {
     }
 } 
 
-for_window [class="Firefox"] move window to workspace 2
 for_window [class="Code"] move window to workspace 3
 
 include /etc/sway/config.d/*
