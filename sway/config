@@ -16,6 +16,7 @@ default_border pixel 4
 
 ### Output configuration
 output eDP-1 res 1920x1080
+output DP-1 res 1920x1080
 output * bg /usr/share/backgrounds/pic.jpg fill
 
 input "1739:24385:Synaptics_TM24" {
