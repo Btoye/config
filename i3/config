@@ -136,10 +136,14 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# custom resize - no need for separate mode
 bindsym $mod+Shift+p resize shrink width 10 px or 10 ppt
 bindsym $mod+Shift+o resize grow height 10 px or 10 ppt
 bindsym $mod+Shift+i resize shrink height 10 px or 10 ppt
 bindsym $mod+Shift+u resize grow width 10 px or 10 ppt
+
+# start browser
+bindsym $mod+q exec qutebrowser
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
