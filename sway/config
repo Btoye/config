@@ -12,12 +12,12 @@ gaps outer 1
 gaps inner 3
 
 default_floating_border none
-default_border pixel 4
+default_border pixel 3
 
 ### Output configuration
 output eDP-1 res 1920x1080
 output DP-1 res 1920x1080
-output * bg /usr/share/backgrounds/pic.jpg fill
+output * bg /usr/share/backgrounds/Asia.jpg fill
 
 input "1739:24385:Synaptics_TM24" {
        dwt enabled
